@@ -1,0 +1,105 @@
+{
+    "nombre": "Romina",
+    "apellido": "Figueroa",
+    "puesto": "Desorralora Full Stack Jr.",
+    "redes": [
+        {
+            "id": 0,
+            "icono": "fa-linkedin"
+        },
+        {
+            "id": 1,
+            "icono": "fa-twitter"
+        },
+        {
+            "id": 2,
+            "icono": "fa-facebook"
+        }
+    ],
+    "foto-perfil": "./../../assets/img/perfil 2.JPG",
+    "acerca de mi": "Soy una persona proactiva, me gustan los desafíos y aprender cosas nuevas para poder desarrollarme profesionalmente. Me gusta colaborar y trabajar en equipo, ya que de diferentes ideas se pueden realizar proyectos interesantes. Estoy comenzando en este mundo de la programación y me encanta.",
+    "experiencia": "Empleada en Ecos Diarios S.A.E.C.I. S.A. Administrativa (Tesorera) Manejo de cajas. Pago a proveedores. Facturación. Transacciones bancarias. Empleada en Ecos Diarios S.A.E.C.I. S.A. Administrativa (Tesorera). Manejo de cajas. Pago a proveedores. Facturación. Transacciones bancarias.",
+    "Educacion": [
+        {
+           "Primaria": "Esc. Nº 19  Capital Federal",
+          
+           "Secundaria":"Polimodal con orientación en Ciencias Naturales  Esc. E.E.M.Nº 8 Necochea."
+        }
+    ],
+   "cursos": [ 
+        {
+            "id": 0,
+            "texto": "SéProgramar de Argentina Programa"
+        },
+        {
+            "id": 1,
+            "texto": "Curso de Lógica de Programación en EGG"
+        }
+        
+    ],
+    "skills": [
+        {
+            "id": 0,
+            "nombre": "HTML",
+            "porcentaje": 75,
+            "color": "#d1af06"
+        },
+        {
+            "id": 1,
+            "nombre": "CSS",
+            "porcentaje": 70,
+            "color": "#d1af06"
+        },
+        {
+            "id": 2,
+            "nombre": "JAVASCRIPT",
+            "porcentaje": 60,
+            "color": "#d1af06"
+        },
+        {
+            "id": 3,
+            "nombre": "ANGULAR",
+            "porcentaje": 60,
+            "color": "#d1af06"
+        },
+        {
+            "id": 4,
+            "nombre": "JAVA",
+            "porcentaje": 60,
+            "color": "#d1af06"
+        },
+        {
+            "id": 5,
+            "nombre": "PSEINT",
+            "porcentaje": 80,
+            "color": "#d1af06"
+        },
+        {
+            "id": 6,
+            "nombre": "HABILIDADES BLANDAS-COMPAÑERISMO",
+            "porcentaje": 80,
+            "color": "#584f1f"
+        },
+        {
+            "id": 7,
+            "nombre": "HABILIDADES BLANDAS-COMUNICACIÓN",
+            "porcentaje": 80,
+            "color": "#584f1f"
+        }
+    ],
+    "proyectos": [
+        {
+            "id": 0,
+            "proyecto": "Muebles",
+            "texto": "Muebles para el hogar",
+            "enlace": "./assets/img/proyecto1.png"
+        },
+        {
+            "id": 1,
+            "proyecto": "Traductor",
+            "texto": "Traductor",
+            "enlace": "./assets/img/proyecto2.png"
+        }
+       
+    ]
+}
