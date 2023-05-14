@@ -1,10 +1,10 @@
-<!--SECCION EDUCACION-->
+<!--SECCION EDUCACION--
 <section class="educacion mt-5">
     <div class="container text-center">
       <div class="row">
         <div class="col-3">
           <br><br><br><br><img src="./../../assets/img/Educacion.png" alt="foto perfil" class=" " >
-          <!--boton modifica imagen educacion-->
+          <!-boton modifica imagen educacion->
           <button type="button" class="btn btn-close-black" data-bs-toggle="modal" data-bs-target="#foto-edu"><i class="fa-solid fa-pencil"></i>
           </button>
           <div class="modal fade" id="foto-edu" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -25,7 +25,7 @@
             </div>
           </div>
         </div>
-        <!--fin boton-->
+        <!--fin boton--
         <div class="col-9 ">
           <br><br><br><br><h4 class="mt-2" text-black>EDUCACION:</h4>
           
@@ -33,7 +33,7 @@
             <br><br>Polimodal con orientación en Ciencias Naturales – Esc. E.E.M.Nº 8 –
             Necochea.
             <br><br> Estudiante de programación Full Stack Jr. Argentina Programa 4.0
-            <!--boton modificar educacion-->
+            <!--boton modificar educacion----
             <button type="button" class="btn btn-close-black" data-bs-toggle="modal" data-bs-target="#boton-edu"><i class="fa-solid fa-pencil"></i>
             </button>
               <div class="modal fade" id="boton-edu" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -54,9 +54,56 @@
                   </div>
                 </div>
               </div>
-              <!--fin boton-->
+              
           </h5>
         </div>
       </div>
+    </div>
+  </section>
+<!-fin boton-->
+
+<section class="educacion mt-5">
+  <div class="container text-center">
+    <div class="row mt-5">
+      <div>
+        <h3 style="text-decoration: underline; font-weight: bold;">Educacion</h3>
+    
+          <button type="button" class="btn btn-close-black mt-3" routerLink="/nuevaedu" *ngIf="isLogged">
+           
+            <h5> + Agregar</h5>
+          </button>
+          <div class="d-flex">
+            <div class="col-3">
+              <img src="./../../assets/img/Educacion.png"  alt="foto-edu" class="mt-5" style="max-width: 100%;">
+            </div>
+            <div class="row" mt="5">
+            <div class="container">
+              <div class="container">
+            <tbody>
+              <tr *ngFor="let Educacion of edu">
+                <td>
+                  <div class="mt-5">
+                  <h4>{{Educacion.nombreE}}</h4>
+                  </div>
+                </td>
+                <td>
+                  <div class="mt-5">
+                  <h6>{{Educacion.descripcionE}}</h6></div></td>
+                <td *ngIf="isLogged">
+                  <button class="btn btn-close-black mt-5" routerLink="/editedu/{{Educacion.id}}">
+                    <i class="fa-solid fa-pencil"></i></button>
+                </td>
+                <td *ngIf="isLogged">
+                  <button class="btn btn-close-black mt-5" (click)="delete(Educacion.id)">
+                    <i class="fa-solid fa-trash"></i></button>
+                </td>
+              </tr>
+            </tbody>
+              </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
     </div>
   </section>

@@ -1,4 +1,31 @@
 .colorLila{
     background-image: url(./../../assets/img/lila.jpg);
-    
+    background-size: cover;
+  background-position: center;
+}
+
+/* Estilos generales */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 20px;
+  }
 }

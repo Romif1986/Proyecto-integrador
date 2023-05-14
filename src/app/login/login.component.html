@@ -1,3 +1,5 @@
+
+
 <!--navbar-->
 
 <nav class="navbar navbar-expand-lg bg-violet">
@@ -10,7 +12,8 @@
             <li class="list-group-item"><a href="https://twitter.com/romif1986" target="_blank"><i class="fa-brands fa-twitter fa-2x text-white"></i></a></li>
             <li class="list-group-item"><a href="https://www.linkedin.com/in/romina-figueroa-6b8504118/" target="_blank"><i class="fa-brands fa-linkedin-in fa-2x text-white"></i></a></li>
             <li class="list-group-item"> 
-                <a href="/login" ><i class="fa-solid fa-user-lock fa-2x text-white"></i></a>
+                <a href="/login" ><i class="fa-solid fa-user-lock fa-2x text-white" *ngIf="!isLogged"></i></a>
+                <a href="/onLogOut" ><i class="fa-solid fa-user fa-2x text-white" *ngIf="isLogged"></i></a>
             </li>
        </ul>
  </div>
@@ -24,16 +27,24 @@
       </div>
       <div class="col-8 formulario-login" >
         <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email </label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-              </div>
-            
-          </div>
+          <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg"
+                [(ngModel)]="nombreUsuario" required />
+              <label class="form-label" for="nombreUsuario">Usuario</label>
+            </div>
+
+            <div class="form-outline form-white mb-4">
+              <input type="password" id="password" name="password" class="form-control form-control-lg" [(ngModel)]="password"
+                required />
+              <label class="form-label" for="password">Password</label>
+            </div>
+
+
+            <!-- <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p> -->
+
+         
           <div class="modal-footer">
             <button type="submit" class="btn btn-secondary" >Ingresar</button>
           </div>

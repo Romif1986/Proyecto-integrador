@@ -1,0 +1,29 @@
+.bg-violet{
+  background-color:rgb(39, 1, 39);
+}
+.list-group{
+  --bs-list-group-bg:transparent;
+}
+i.fa-brands.fa-linkedin-in.fa-2x.text-white:hover{
+background-color:rgb(223, 137, 234) ;
+}
+i.fa-brands.fa-twitter.fa-2x.text-white:hover{
+  background-color:rgb(223, 137, 234) ;   
+}
+i.fa-brands.fa-facebook.fa-2x.text-white:hover{
+  background-color:rgb(223, 137, 234) ; 
+}
+i.fa-solid.fa-user-lock.fa-2x.text-white:hover{
+  background-color:rgb(223, 137, 234) ;
+}
+.login{
+  height: 70vh;
+}
+.formulario-login{
+  margin-top: 10%;
+  
+}
+  
+
+  
+  

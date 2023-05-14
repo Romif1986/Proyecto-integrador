@@ -1,0 +1,30 @@
+.Habilidad {
+    display: contents;
+    justify-content: end;
+    align-items: end;
+  }
+
+  .loading-bar {
+    position:absolute;
+    
+    height: 30px;
+    width: 80%;
+    border: 1;
+    background-color: #2a2a2a;
+    border-radius: 20px;
+  }
+  
+  span {
+    display: block;
+    position: relative;
+    height: 100%;
+    border-radius: 50px;
+    background-image: linear-gradient(to bottom, #fff, #96156b 30%);
+    overflow: hidden;
+    width: 0%;
+    transition: width 5s ease-in-out;
+  }
+  
+  .animate span {
+    width: 100%;
+  }
