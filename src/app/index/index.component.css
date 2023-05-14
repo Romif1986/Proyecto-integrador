@@ -4,13 +4,13 @@
   background-position: center;
 }
 
-/* Estilos generales */
+
 body {
   font-size: 16px;
   line-height: 1.5;
 }
 
-/* Estilos para pantallas pequeñas */
+
 @media screen and (max-width: 768px) {
   body {
     font-size: 14px;
@@ -20,7 +20,7 @@ body {
   }
 }
 
-/* Estilos para pantallas más pequeñas */
+
 @media screen and (max-width: 480px) {
   body {
     font-size: 12px;
