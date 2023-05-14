@@ -8,7 +8,6 @@ import { RedesComponent } from './redes/redes.component';
 import { PersonaComponent } from './persona/persona.component';
 import { EducacionComponent } from './educacion/educacion.component';
 import { ExperienciaComponent } from './experiencia/experiencia.component';
-import { PanelComponent } from './panel/panel.component';
 import { PresentacionComponent } from './presentacion/presentacion.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { IndexComponent } from './index/index.component';
@@ -53,7 +52,7 @@ import { ContactoComponent } from './contacto/contacto/contacto.component';
     LoginComponent,
     RedesComponent,
     PersonaComponent,
-    PanelComponent,
+
     PresentacionComponent,
     ProyectosComponent,
     IndexComponent,

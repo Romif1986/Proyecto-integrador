@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { IndexComponent } from './index/index.component';
 import { LoginComponent } from './login/login.component';
-import { PanelComponent } from './panel/panel.component';
 import { NewExperienciaComponent } from './experiencia/new-experiencia.component';
 import { EditExperienciaComponent } from './experiencia/edit-experiencia.component';
 import { NeweducacionComponent } from './educacion/new-educacion.component';
@@ -23,7 +22,6 @@ import { EditHabilidadComponent } from './habilidad/edit-habilidad.component';
 const routes: Routes = [
 {path: '' , component : IndexComponent },
 { path: 'login' , component : LoginComponent },
-{ path: 'panel' , component : PanelComponent}, 
 { path: 'nuevaexp', component: NewExperienciaComponent},
 { path: 'editexp/:id', component: EditExperienciaComponent},
 { path: 'nuevaedu', component: NeweducacionComponent},
