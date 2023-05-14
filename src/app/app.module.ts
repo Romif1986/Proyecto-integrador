@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './modals/login/login.component';
 import { RedesComponent } from './redes/redes.component';
-import { RegistroComponent } from './registro/registro.component';
 import { PersonaComponent } from './persona/persona.component';
 import { EducacionComponent } from './educacion/educacion.component';
 import { ExperienciaComponent } from './experiencia/experiencia.component';
@@ -53,7 +52,6 @@ import { ContactoComponent } from './contacto/contacto/contacto.component';
     NavbarComponent,
     LoginComponent,
     RedesComponent,
-    RegistroComponent,
     PersonaComponent,
     PanelComponent,
     PresentacionComponent,
