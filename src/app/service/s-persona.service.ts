@@ -12,7 +12,7 @@ import { Persona } from "../model/persona.model";
 export class SPersonaService {
 
   //expURL = 'http://localhost:8080/persona/'
-  expURL = 'https://backend-yoprogramo-du10.onrender.com/persona/'
+  expURL = 'https://backend-yoprogramo-du10.onrender.com/persona'
 
   constructor(private httpClient: HttpClient) { }
 
