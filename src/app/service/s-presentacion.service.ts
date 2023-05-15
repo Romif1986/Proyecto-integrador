@@ -9,7 +9,7 @@ import { Presentacion } from '../model/presentacion';
 export class SPresentacionService {
 
   //expURL = 'http://localhost:8080/presentacion/'
-  expURL = 'https://backend-yoprogramo-du10.onrender.com/presentacion'
+  expURL = 'https://backend-yoprogramo-du10.onrender.com/presentacion/'
 
   constructor(private httpClient: HttpClient) { }
 

@@ -1,86 +1,27 @@
-<!--SECCION PRESENTACION--
-<section class="presentacion mt-5">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-3">
-          <img src="./../../assets/img/perfil 2.JPG" alt="foto perfil" class="rounded-circle " >
- <--boton modificar foto perfil--
- <button type="button" class="btn btn-close-black" data-bs-toggle="modal" data-bs-target="#img-perfil"><i class="fa-solid fa-pencil"></i>
- </button>
- <div class="modal fade" id="img-perfil" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-   <div class="modal-dialog">
-     <div class="modal-content">
-       <div class="modal-header">
-         <h1 class="modal-title fs-5" id="img-perfil">Seleccione una nueva imagen</h1>
-         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-       </div>
-       <div class="modal-body">
-         <input class="form-control" type="file" id="img-perfil">
-       </div>
-       <div class="modal-footer">
-         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-         <button type="button" class="btn btn-primary">Agregar</button>
-       </div>
-     </div>
-   </div>
- </div>
-  <!-fin boton--   
-</div>
-<div class="col-9 ">
-  <h4 class="mt-2" text-black>ACERCA DE MI:</h4> 
-   <h5><br> Soy una persona proactiva, me gustan los desafíos y aprender cosas nuevas para poder desarrollarme profesionalmente.<br> 
-    Me gusta colaborar y trabajar en equipo, ya que de diferentes ideas se pueden realizar proyectos interesantes.
-    <br>Estoy comenzando en este mundo de la programación y me encanta.
-    <!-boton modificar texto--
-    <button type="button" class="btn btn-close-black" data-bs-toggle="modal" data-bs-target="#boton-info"><i class="fa-solid fa-pencil"></i>
-    </button>
-      <div class="modal fade" id="boton-info" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="boton-info">Acerca de mi</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <textarea class="form-control" placeholder="" id="boton-info" style="height:100px;"></textarea>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn btn-primary">Modificar</button>
-            </div>
-          </div>
-        </div>
-      </div>      
-    <--fin boton--
-  </h5>
-</div>
-</div>
-</div>
-</section>
- <--fin boton-->
-
-  <section class="presentacion">
-    <div class="container text-center d-flex">
-      <div class="col-3">
+<section class="presentacion">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-12">
         <img src="./../../assets/img/perfil 2.JPG" alt="foto perfil" class="rounded-circle">
       </div>
-      <div class="col-9 mt-3">
-        <h3 style="text-decoration: underline; font-weight: bold;">Acerca de mi</h3>
+      <div class="col-lg-9 col-md-8 col-sm-12 mt-3">
+        <h3 style="text-decoration: underline; font-weight: bold;">Acerca de mí</h3>
         <div class="row mt-5">
-          <div class="container">
+          <div class="col-12">
             <div *ngFor="let Presentacion of pre">
               <h5>{{Presentacion.descripcion}}</h5>
-              <td class="btn-container">
-                <button class="btn btn-close-black" routerLink="/editpre/{{Presentacion.id}}"*ngIf="isLogged">
+              <div class="btn-container">
+                <button class="btn btn-close-black" routerLink="/editpre/{{Presentacion.id}}" *ngIf="isLogged">
                   <i class="fa-solid fa-pencil"></i>
                 </button>
-                <button class="btn btn-close-black" (click)="delete(Presentacion.id)"*ngIf="isLogged">
+                <button class="btn btn-close-black" (click)="delete(Presentacion.id)" *ngIf="isLogged">
                   <i class="fa-solid fa-trash"></i>
                 </button>
-              </td>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>

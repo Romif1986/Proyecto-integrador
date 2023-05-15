@@ -1,7 +1,7 @@
 section.persona {
   background-image: linear-gradient(rgba(85, 1, 53, 0.2),
       rgba(75, 5, 57, 0.9)), url(./../../assets/img/banner4.jpg);
-  height: 100vh;
+  height: 70vh;
   width: 100%;
   background-repeat: no-repeat;
   position: relative;
@@ -15,5 +15,23 @@ section.persona {
   display:flex;
   justify-content:center;
   margin-top: 60px;
+}
+@media only screen and (max-width: 991px) {
+  .persona td {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .persona .container-center {
+    flex-direction: column;
+    align-items: center;
+  }
+  .persona h1,
+  .persona h3 {
+    text-align: center;
+  }
+  .persona img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ɵisEnvironmentProviders } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -52,7 +52,6 @@ import { ContactoComponent } from './contacto/contacto/contacto.component';
     LoginComponent,
     RedesComponent,
     PersonaComponent,
-
     PresentacionComponent,
     ProyectosComponent,
     IndexComponent,

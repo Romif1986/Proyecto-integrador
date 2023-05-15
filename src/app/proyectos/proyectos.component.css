@@ -1,5 +1,17 @@
-.card-img-top{
-    width: 25%;
-    height: 25%;
+.card-img-top {
+    max-width: 100%;
+    height: auto;
     box-shadow: 5px 50px 20px rgb(12, 12, 12);
-}
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .card-img-top {
+      max-width: 60%;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .card-img-top {
+      max-width: 40%;
+    }
+  }
