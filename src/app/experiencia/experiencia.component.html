@@ -1,45 +1,29 @@
 <section class="experiencia mt-5">
   <div class="container text-center mt-5">
     <div class="row mt-5">
-      <div>
+      <div class="col-sm-12 col-md-6 order-md-1">
         <h3 style="text-decoration: underline; font-weight: bold;">Experiencia laboral</h3>
         <button type="button" class="btn btn-close-black mt-3" routerLink="/nuevaexp" *ngIf="isLogged">
           <h5>+ Agregar</h5>
         </button>
-        <div class="d-flex align-items-center">
-          <div class="col-3">
-            <img src="./../../assets/img/imagen 2.jfif" alt="foto-exp" class="mt-5" style="max-width: 100%;">
-          </div>
-          <div class="col-9 mt-5">
-            <div class="table-responsive">
-              <table class="table">
-                <tbody>
-                  <tr *ngFor="let Experiencia of expe">
-                    <td>
-                      <div class="mt-5">
-                        <h4>{{Experiencia.nombreE}}</h4>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="mt-5">
-                        <h6>{{Experiencia.descripcionE}}</h6>
-                      </div>
-                    </td>
-                    <td *ngIf="isLogged">
-                      <button class="btn btn-close-black mt-5" routerLink="/editexp/{{Experiencia.id}}">
-                        <i class="fa-solid fa-pencil"></i>
-                      </button>
-                    </td>
-                    <td *ngIf="isLogged">
-                      <button class="btn btn-close-black mt-5" (click)="delete(Experiencia.id)">
-                        <i class="fa-solid fa-trash"></i>
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+        <div class="d-flex flex-column">
+          <div *ngFor="let Experiencia of expe">
+            <h4 class="mt-5">{{Experiencia.nombreE}}</h4>
+            <h6>{{Experiencia.descripcionE}}</h6>
+            <div class="btn-container mt-3">
+              <button class="btn btn-close-black" routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged">
+                <i class="fa-solid fa-pencil"></i>
+              </button>
+              <button class="btn btn-close-black" (click)="delete(Experiencia.id)" *ngIf="isLogged">
+                <i class="fa-solid fa-trash"></i>
+              </button>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 order-md-2">
+        <div class="d-flex justify-content-center">
+          <img src="./../../assets/img/imagen 2.jfif" alt="foto-exp" class="mt-5" style="max-width: 100%;">
         </div>
       </div>
     </div>
